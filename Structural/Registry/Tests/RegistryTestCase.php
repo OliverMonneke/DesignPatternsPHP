@@ -9,7 +9,7 @@ use DesignPatterns\Structural\Registry\Registry;
 use DesignPatterns\Structural\Registry\Service;
 use PHPUnit\Framework\TestCase;
 
-class RegistryTest extends TestCase
+class RegistryTestCase extends TestCase
 {
     private Service $service;
 
