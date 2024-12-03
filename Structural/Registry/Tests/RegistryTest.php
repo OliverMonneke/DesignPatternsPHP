@@ -27,10 +27,9 @@ class RegistryTest extends TestCase
 
     public function testThrowsExceptionWhenTryingToSetInvalidKey()
     {
-        $this->markTestSkipped('This test is not working in separate process');
-        #$this->expectException(InvalidArgumentException::class);
+        $this->expectException(InvalidArgumentException::class);
 
-        #Registry::set('foobar', $this->service);
+        Registry::set('foobar', $this->service);
     }
 
     /**
@@ -42,9 +41,8 @@ class RegistryTest extends TestCase
      */
     public function testThrowsExceptionWhenTryingToGetNotSetKey()
     {
-        $this->markTestSkipped('This test is not working in separate process');
-        #$this->expectException(InvalidArgumentException::class);
+        $this->expectException(InvalidArgumentException::class);
 
-        #Registry::get(Registry::LOGGER);
+        Registry::get(Registry::LOGGER);
     }
 }
